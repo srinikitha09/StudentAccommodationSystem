@@ -6,6 +6,9 @@ div {
 
 table {
   border-collapse: collapse;
+  margin:10px auto;
+  max-width: 500px;
+  padding: 20px 12px 10px 20px;
 }
 
 table, td, thead {
@@ -122,4 +125,15 @@ select{
   font-size: 13px;
   display:inline-block;
   margin-left: 90px;
+}
+
+
+.registrationLink{
+  margin-left: 800px;
+  margin-top: -20px;
+}
+
+registrationLink.style {
+  margin-left: 800px;
+  margin-top: -20px;
 }

@@ -1,0 +1,297 @@
+
+
+
+
+<div  class="topnav">
+  <img src="https://rundschau-hd.de/wp-content/uploads/2016/10/Logo_SRH_HS_Heidelberg.svg_.jpg" class="logo"height="50px" width="50px"/>
+  <a class="active" href="#home">Home</a>
+  <a href="/newStudentCoordinatorCreation">StudentCoordinator</a>
+  <a href="/studentRegistration">studentRegistrtion</a>
+
+  <a href="#about">About</a>
+  <a href="/studentRegistration" class="logout">Logout</a>
+</div>
+
+
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1" (click)="applyAccommodation()">Apply Accommodation</a></li>
+    <li><a href="#tabs-2" (click)="personalInfo()">Personal Info</a></li>
+    <li><a href="#tabs-3" (click)="moreInfo()">More Info</a></li>
+  </ul>
+</div>
+  <div id="tabs-1">
+
+    <form>
+
+      <ul class="form-style-2">
+
+        <li>
+          <div>
+            <label>Building Name</label>
+            <select id="buildingName"  >
+              <option value="LGS">LGS</option>
+              <option value="BS13">BS13</option>
+            </select>
+
+          </div>
+          <div>
+            <label>Room Type</label>
+            <select id="roomType" >
+              <option value="Single Room">Single Room</option>
+              <option value="Double Room">Double Room</option>
+              <option value="Luxery Room">Luxery Room</option>
+            </select>
+
+          </div>
+        </li>
+
+        <li>
+          <div>
+            <label>From</label>
+            <input id="from" type="date" />
+          </div>
+          <div>
+            <label>To</label>
+            <input id="to" type="date" />
+          </div>
+        </li>
+        <li>
+          <div>
+            <button title="Submit" class="button" name="Submit" (click)="Send(tsadsadttg)">Submit</button>
+          </div>
+          <div>
+            <button title="Submit" class="button" name="Submit"  >Cancel</button>
+          </div>
+
+        </li>
+
+      </ul>
+      <br>
+
+      <div class="next"  id="next1" >
+
+          <button (click)="contractInfo()">Next</button>
+
+      </div>
+
+
+    </form>
+  </div>
+<div id="contract" class="contract">
+  <p>Dear   xxxxx,</p>
+
+  <p>I accept the contract from this date to this date.</p>
+
+    <p>In this Agreement the terms in bold capitals on the cover page of this Agreement have the
+    meanings set out next to them.
+    1.2 Text in bold set out in boxes in this Agreement is for guidance and information only and does
+    not form part of this Agreement. Any reference to Agreement refers to this agreement.
+    1.3 The term “the Landlord” includes not only the company named on the cover page but also any
+    other persons or companies who may legally succeed it.</p>
+  <input type="checkbox"/>I accept the terms & conditions and proceed further
+<div>
+  <ul>
+    <li>
+      <div>
+        <button title="Submit" class="button" name="Submit" >Accept</button>
+      </div>
+      <div>
+        <button title="Submit" class="button" name="Submit"  >Reject</button>
+      </div>
+  </ul>
+  <div id="nextback" class="nextback">
+    <button id="backButton" (click)="applyAccommodation()">Back</button>
+    <button id="nextButton" (click)="paymentMode()">Next</button>
+  </div>
+</div>
+
+</div>
+<div id="paymentMode">
+  <h2>Mode of Payment:</h2>
+  <p>There are two methods to perform the payment.</p>
+  <h3>1. Online Transfer</h3>
+  <p>Please transfer the desired amount to the below mentioned bank accounts detail.</p>
+  <h3>Bank Details:</h3>
+  <p>Account No: xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    </p>
+  <p>IBAN No: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+  <h3>2. Payment By Cash.</h3>
+  <p>Please pay by cash at the SRH International Office.</p>
+  <p><b>NOTE: Please upload the payment receipt file with file name as payment or bill reference number.</b></p>
+
+  <div id="paymentsection">
+    <h2><u>Payment Section</u></h2>
+    <div>
+    <ul id="paymentFilesUl">
+
+      <li>
+        <label>Payment Method</label>
+        <select id="paymentSelection" name="select payment method">
+          <option value="By Cash">Cash Payment</option>
+          <option value="Online">Online Transfer</option>
+        </select>
+      </li>
+      <br>
+
+      <li>
+
+        <label>Upload receipt</label>
+        <input type="file">
+      </li>
+
+
+    </ul>
+      <button class="button">Submit</button>
+    </div>
+    <div id="nextback1" class="nextback1">
+      <button id="backButton1" (click)="contractInfo()">Back</button>
+      <button id="nextButton1" (click)="summary()">Next</button>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+  <div id="tabs-2">
+    <form>
+
+      <ul class="form-style-2">
+
+        <li>
+
+            <div>
+            <label class="label">First Name:</label>
+              </div>
+            <div ng-repeat="let item of items">
+            <input class="font" id= 'firstname'  disabled="true" />
+              </div>
+          <br>
+            <div>
+            <label class="label">Last Name:</label>
+              </div>
+            <div>
+            <input  class="font" id="lastname" type="text"  />
+              </div>
+          <br>
+            <div>
+            <label class="label">Mobile number:</label>
+              </div>
+            <div>
+            <input class="font" id="mobilenumber"  />
+              </div>
+          <br>
+            <div>
+            <label class="label">Emergency Contact:</label>
+              </div>
+            <div>
+            <input class="font" id="emeergencycontact" type="date" />
+              </div>
+
+        <br>
+          <div class="class1">
+            <button title="Submit" class="button" name="Submit" (click)="Send(tsadsadttg)">Submit</button>
+          </div>
+          <div class="class1">
+            <button title="Submit" class="button" name="Submit"  >Cancel</button>
+          </div>
+        </li>
+
+      </ul>
+
+    </form>
+  </div>
+<div id="summary">
+  <table >
+    <thead style="font-size: larger">
+    <tr>
+
+      <td>Building</td>
+      <td>Room type</td>
+      <td>Size</td>
+      <td>Rent</td>
+      <td>From</td>
+      <td>To</td>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of studentBookingList | async">
+
+      <td>{{item.studentsBookingData.BuildingName}}</td>
+      <td>{{item.studentsBookingData.RoomType}}</td>
+      <td>{{item.studentsBookingData.size}}</td>
+      <td>{{item.studentsBookingData.Rent}}</td>
+      <td>{{item.studentsBookingData.AvailableFrom}}</td>
+      <td>{{item.studentsBookingData.To}}</td>
+    </tr>
+    </tbody>
+  </table>
+  <h3>Would you like to give a Feedback about the process ?</h3>
+  <input type="radio" value="yes"/>Yes
+  <input type="radio" value="no"/>No
+  <table>
+    <thead>
+    <tr>
+    <td>value</td>
+    <td>Rating</td>
+    </tr>
+    </thead>
+    <tr>
+    <td>Overall Satisfaction</td>
+    <td class="rating">
+      <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+    </td>
+  </tr>
+    <tr>
+      <td>Process Flow</td>
+      <td class="rating">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Tool Navigation</td>
+      <td class="rating">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Ease of Use</td>
+      <td class="rating">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+      </td>
+    </tr>
+  </table>
+  <div id="nextback" class="nextback">
+    <button id="backButton2" (click)="paymentMode()">Back</button>
+
+  </div>
+</div>
+
+  <div id="tabs-3">
+    more info data
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,453 @@
+.form-style-1 ul {
+  padding: 0;
+  display: block;
+  list-style: none;
+  float: left;
+  height: 26px;
+  overflow: hidden;
+  padding: 0 0 0 21px;
+
+  list-style-type: disc;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 40px;
+}
+ul.form-style-1 li{
+  float: left;
+  list-style: none;
+  color: #0080C0;
+  display: inline-block;
+  float: left;
+  font-weight: 700;
+  height: 16px;
+  padding: 5px 8px;
+  text-decoration: none;
+  cursor: pointer;
+}
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  list-style: none;
+  color: #0080C0;
+
+}
+ul {
+display: block;
+list-style-type: disc;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+-webkit-padding-start: 40px;
+}
+.form-style-1 {
+  margin:10px auto;
+  max-width: 700px;
+  padding: 20px 12px 10px 20px;
+  font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+}
+div2 {
+  margin:50px auto;
+  max-width: 700px;
+  padding: 20px 12px 10px 20px;
+}
+
+.div1{
+  margin-left: 400px;
+  width: 700px;
+  height: 30px;
+}
+.form-style-1[_ngcontent-c1] {
+  margin-left: 10px;
+  max-width: 500px;
+  padding: 20px 12px 10px 10px;
+}
+
+.form-style-2 {
+  margin:10px auto;
+  max-width: 500px;
+  padding: 20px 12px 10px 20px;
+  font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;}
+
+.ui-tabs .ui-tabs-nav {
+  /* margin: 0; */
+  margin-left: 450px;
+  padding: .2em .2em 0;
+}
+
+
+
+
+
+
+div {
+  display: inline-block;
+  padding:10px;
+
+}
+
+table {
+  border-collapse: collapse;
+  margin:10px auto;
+  max-width: 500px;
+  padding: 20px 12px 10px 20px;
+}
+
+table, td, thead {
+  border: 1px solid black;
+  border-bottom: 1px solid #ddd;
+
+}
+div label {
+  display: block;
+}
+.form-style-1 {
+  margin:10px auto;
+  max-width: 500px;
+  padding: 20px 12px 10px 20px;
+  font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+}
+.form-style-1 li {
+  padding: 0;
+  display: block;
+  list-style: none;
+
+}
+.form-style-1 label{
+  margin:0 0 3px 0;
+  padding:0px;
+  display:block;
+  font-weight: bold;
+  color: #0080C0;
+}
+.form-style-1 h2
+{
+  border-bottom: thick solid #0080C0;
+  text-align: center;
+  color: #0080C0;
+}
+.form-style-1 input[type=text],
+.form-style-1 input[type=date],
+.form-style-1 input[type=datetime],
+.form-style-1 input[type=number],
+.form-style-1 input[type=search],
+.form-style-1 input[type=time],
+.form-style-1 input[type=url],
+.form-style-1 input[type=email],
+textarea,
+select{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border:1px solid #BEBEBE;
+  padding: 7px;
+  width:200px;
+  margin:0px;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+}
+.form-style-1 input[type=text]:focus,
+.form-style-1 input[type=date]:focus,
+.form-style-1 input[type=datetime]:focus,
+.form-style-1 input[type=number]:focus,
+.form-style-1 input[type=search]:focus,
+.form-style-1 input[type=time]:focus,
+.form-style-1 input[type=url]:focus,
+.form-style-1 input[type=email]:focus,
+.form-style-1 textarea:focus,
+.form-style-1 select:focus{
+  -moz-box-shadow: 0 0 8px #88D5E9;
+  -webkit-box-shadow: 0 0 8px #88D5E9;
+  box-shadow: 0 0 8px #88D5E9;
+  border: 1px solid #88D5E9;
+
+}
+.form-style-1 .field-divided{
+  width: 49%;
+}
+
+.form-style-1 .field-long{
+  width: 100%;
+}
+.form-style-1 .field-select{
+  width: 100%;
+}
+.form-style-1 .field-textarea{
+  height: 100px;
+}
+.form-style-1 input[type=submit], .form-style-1 input[type=button]{
+  background: #0080C0;
+  padding: 8px 15px 8px 15px;
+  border: none;
+  color: #fff;
+  display: inline-block;
+}
+.form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
+  background: #0080C0;
+  box-shadow:none;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  display: inline-block;
+}
+.form-style-1 .required{
+  color:red;
+}
+.button {
+  background-color: #0080C0; /* Green */
+  border: none;
+  color: white;
+  padding: 7px 32px;
+  border-radius:5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 13px;
+  display:inline-block;
+  margin-left: 90px;
+}
+
+
+.ui-widget.ui-widget-content {
+  border: 1px solid white;
+}
+
+.div1[_ngcontent-c1] {
+  margin-left: 200px;
+  width: 700px;
+  height: 30px;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+  border: 1px solid #003eff;
+  background: #0080C0;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.button[_ngcontent-c1] {
+  background-color: #0080C0;
+  border: none;
+  color: white;
+  padding: 7px 32px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 13px;
+  display: inline-block;
+  margin-left: 25px;
+}
+/* Style the tab */
+div.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+/* Style the tab */
+div.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.form-style-2[_ngcontent-c1] {
+  margin: 10px auto;
+  margin-left: 450px;
+  max-width: 500px;
+  padding: 20px 12px 10px 20px;
+  font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+}
+
+.label{
+  display: inline-block;
+  float: left;
+  clear: left;
+  width: 250px;
+  text-align: right;
+}
+.font {
+  display: inline-block;
+  float: left;
+}
+
+
+.class1 {
+  display: inline-block;
+  padding: 10px;
+  margin-left: 50px;
+  gin-right: 30px;
+  align-content: stretch;
+  text-align: right;
+}
+.next{
+  margin-left: 800px;
+  margin-top:100px;
+  border-bottom: 1px solid black;
+}
+
+
+.contract {
+  height: 200px;
+  width: 500px;
+  border: 1px solid black;
+  margin-left: 400px;
+  margin-top: 70px;
+}
+#backButton{
+  margin-left: -100px;
+}
+#nextButton{
+  margin-left: 470px;
+}
+#paymentMode{
+  margin-left: 450px;
+}
+#paymentsection
+{
+  margin-left: 180px;
+
+color: #999999;
+}
+#paymentFiles{
+  margin-left: 200px;
+}
+#backButton1{
+  margin-left: -170px;
+
+
+}
+#nextButton1{
+  margin-left: 470px;
+
+
+}
+#paymentFilesUl{
+  margin-left: -50px;
+}
+
+
+#summary[_ngcontent-c1] {
+  margin-top: -12px;
+  margin-left: 450px;
+}
+
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+  content: "\2605";
+  position: absolute;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #0080C0;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #0080C0;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: #0080C0;
+  color: white;
+}
+.topnav{
+  margin-left: 100px;
+  background-color: #88D5E9;
+  word-spacing: 30px;
+width: 900px;
+}
+
+.logout{
+  margin-left: 320px;
+  right:10px;
+  top:5px;
+}
+.logo{
+
+  margin-left: -930px;
+  margin-top: -30px;
+}
+
+
+
+
+

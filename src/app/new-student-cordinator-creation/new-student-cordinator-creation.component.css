@@ -6,6 +6,9 @@ div {
 
 table {
   border-collapse: collapse;
+  margin:10px auto;
+  max-width: 500px;
+  padding: 20px 12px 10px 20px;
 }
 
 table, td, thead {

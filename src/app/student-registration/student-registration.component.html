@@ -1,0 +1,111 @@
+
+
+
+
+
+<form>
+
+
+
+  <ul class="form-style-1">
+    <h2>sign Up </h2>
+    <li>
+      <div>
+        <label>User name</label>
+        <input id= 'username' type="text"  />
+      </div>
+    </li>
+    <li>
+      <div>
+        <label>Password</label>
+        <input id="password" type="password"/>
+      </div>
+      <div>
+        <label>Confirm Password</label>
+        <input type="password" id="password1" />
+      </div>
+
+    </li>
+    <li>
+      <div>
+        <label>Title</label>
+        <select id="title" name="title">
+          <option value="Mr">Mr</option>
+          <option value="Mrs">Mrs</option>
+        </select>
+      </div>
+      <div>
+        <label>Firstname</label>
+        <input id="fname" type="text"/>
+      </div>
+      <div>
+        <label>Lastname</label>
+        <input id="lname" type="text"/>
+      </div>
+    </li>
+    <li>
+      <div>
+        <label>Date Of Birth</label>
+        <input id="dob" type="date" />
+      </div>
+      <div id="gender">
+
+        <label>Gender</label>
+        <input type="radio" name="gender" value="male" />Male
+        <input type="radio" name="gender" value="female" />Female
+        <input type="radio" name="gender" value="others" />Others
+
+      </div>
+    <li>
+      <div>
+        <label>Email Address</label>
+        <input id="email" type="email" />
+      </div>
+      <div>
+        <label>Mobile Number</label>
+        <input id="mobilenumber" type="number" />
+      </div>
+      <div>
+        <label>Emergency Contact</label>
+        <input id="emergencycontact" type="number" />
+      </div>
+    </li>
+    <li>
+      <div>
+        <label>Physically impairment</label>
+        <form  id="impairment">
+          <input type="radio" name="no" value="no" />No
+          <input type="radio" name="yes" value="yes" />Yes
+        </form>
+      </div>
+    </li>
+    <li>
+      <div>
+        <label>Address</label>
+        <input id="address" type="text" />
+      </div>
+      <div>
+        <label>Nationality</label>
+        <input id="nationality" type="text" />
+      </div>
+    </li>
+    <li>
+      <div>
+        <label>Expected date of arrival</label>
+        <input id="dateOfArrival" type="date"/>
+      </div>
+    </li>
+    <li>
+      <div>
+        <button  type="button" title="Submit" class="button" name="Submit" (click)="Send(tsadsadttg)">Submit</button>
+      </div>
+      <div>
+        <button title="Submit" class="button" name="Submit"  >Cancel</button>
+      </div>
+    </li>
+    <div id="details-container">
+      <p *ngFor="let item of items | async">{{item.studentsInformation.EmailAddress}}</p>
+    </div>
+  </ul>
+
+</form>

@@ -1,0 +1,92 @@
+<form>
+
+
+
+  <ul class="form-style-1">
+    <h2>New Student Coordinator </h2>
+    <li>
+      <div>
+        <label>FirstName</label>
+        <input id= 'FirstName' type="text"  />
+      </div>
+      <div>
+        <label>LastName</label>
+        <input id="LastName" type="text"  />
+      </div>
+    </li>
+    <li>
+      <div>
+        <label>Email</label>
+        <input id="email"  type="email"/>
+      </div>
+      <div>
+        <label>Mobile Number</label>
+        <input type="text" id="mobile" />
+      </div>
+
+    </li>
+    <li>
+      <div>
+        <label>Language Spoken</label>
+        <form id="languages">
+          <input  type="checkbox" name="vehicle" value="English" checked="checked">English<br>
+          <input  type="checkbox" name="vehicle" value="German">German<br>
+          <input  type="checkbox" name="vehicle" value="Hindi" >Hindi<br>
+        </form>
+
+      </div>
+    </li>
+    <li>
+      <div>
+        <label>AvilableFrom</label>
+        <input id="fromDate" type="date" />
+      </div>
+      <div>
+        <label>To</label>
+        <input id="toDate" type="date" />
+      </div>
+    </li>
+    <li>
+      <div>
+        <button title="Submit" class="button" name="Submit" (click)="Send(tsadsadttg)">Submit</button>
+      </div>
+      <div>
+        <button title="Submit" class="button" name="Submit"  >Cancel</button>
+      </div>
+    </li>
+
+  </ul>
+
+  <ul class="form-style-1">
+    <h2>Student Coordinator Information </h2>
+
+
+  </ul>
+</form>
+<table >
+  <thead style="font-size: larger">
+  <tr>
+
+    <td>Firstname</td>
+    <td>lastname</td>
+    <td>EmailId</td>
+    <td>Languages</td>
+    <td>AvailableFrom</td>
+    <td>AvailableTo</td>
+    <td>MobileNumber</td>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let item of items | async">
+
+    <td>{{item.studentCoordinatorsInfo.FirstName}}</td>
+    <td>{{item.studentCoordinatorsInfo.LastName}}</td>
+    <td>{{item.studentCoordinatorsInfo.Emailid}}</td>
+    <td>{{item.studentCoordinatorsInfo.Languages}}</td>
+    <td>{{item.studentCoordinatorsInfo.AvailableFrom}}</td>
+    <td>{{item.studentCoordinatorsInfo.To}}</td>
+    <td>{{item.studentCoordinatorsInfo.MobileNumber}}</td>
+  </tr>
+  </tbody>
+</table>
+

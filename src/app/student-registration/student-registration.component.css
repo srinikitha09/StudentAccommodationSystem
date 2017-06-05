@@ -6,6 +6,9 @@ div {
 
 table {
   border-collapse: collapse;
+  margin:10px auto;
+  max-width: 500px;
+  padding: 20px 12px 10px 20px;
 }
 
 table, td, thead {
@@ -18,7 +21,7 @@ div label {
 }
 .form-style-1 {
   margin:10px auto;
-  max-width: 500px;
+  max-width: 700px;
   padding: 20px 12px 10px 20px;
   font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 
@@ -123,3 +126,5 @@ select{
   display:inline-block;
   margin-left: 90px;
 }
+
+
