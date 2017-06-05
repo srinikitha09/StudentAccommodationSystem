@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 import { AngularFireAuth } from 'angularfire2/auth';
+import { ActivatedRoute, Router } from "@angular/router";
 import {Observable} from "rxjs/Observable";
 import * as firebase from "firebase/app";
 
@@ -28,7 +29,8 @@ export class StudentLoginComponent implements OnInit
   pwd : string='';
   dbPwd: String='';
 
-  constructor(public afAuth: AngularFireAuth, public af: AngularFireDatabase) {
+  constructor(public afAuth: AngularFireAuth, public af: AngularFireDatabase , private route: ActivatedRoute, private router: Router) {
+
     this.items = af.list('/studentsInformation', {
       query: {
         limitToLast: 50
@@ -59,7 +61,7 @@ export class StudentLoginComponent implements OnInit
     if (this.pwd === item.studentsInformation.Password && this.email === item.studentsInformation.EmailAddress)
     {
       alert("successfully logged");
-      return;
+      this.router.navigate(['/studentBookAccommocation']);
     }
      else {
     alert("please enter valid mail id and password");
