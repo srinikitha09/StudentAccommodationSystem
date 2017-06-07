@@ -4,8 +4,8 @@ import { AngularFireAuth } from 'angularfire2/auth';
 import { ActivatedRoute, Router } from "@angular/router";
 import {Observable} from "rxjs/Observable";
 import * as firebase from "firebase/app";
-
-
+declare var jquery:any;
+declare var $ :any;
 @Component({
   selector: 'app-student-login',
   templateUrl: './student-login.component.html',
@@ -50,12 +50,12 @@ export class StudentLoginComponent implements OnInit
 
     this.items = this.refrencAF.list('/studentsInformation', {
       query: {
-        limitToLast: 50,
+      limitToLast: 50,
         orderByChild:'/studentsInformation/EmailAddress',
         equalTo: this.email
-      }
+    }
 
-    });
+  });
 
     this.items.subscribe(items => items.forEach(item =>{
     if (this.pwd === item.studentsInformation.Password && this.email === item.studentsInformation.EmailAddress)

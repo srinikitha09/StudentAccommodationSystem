@@ -17,7 +17,7 @@ declare var $ :any;
 })
 export class StudentBookAccommodationComponent implements OnInit {
   user: Observable<firebase.User>;
-  studentBookingList: FirebaseListObservable<any[]>;
+  items: FirebaseListObservable<any[]>;
   studentPersonal: FirebaseListObservable<any[]>;
   //images: FirebaseListObservable<any[]>;
   formsitems: FirebaseListObservable<any[]>;
@@ -25,12 +25,12 @@ export class StudentBookAccommodationComponent implements OnInit {
   objArr = [];
   msgVal: string = '';
   title = 'app works!';
-
+  refrencAF: AngularFireDatabase;
   constructor(public afAuth: AngularFireAuth, public af: AngularFireDatabase) {
 
 
 
-    this.studentBookingList = af.list('/studentsBookingData', {
+    this.items = af.list('/studentsBookingData', {
       query: {
         limitToLast: 50
       }
@@ -40,11 +40,10 @@ export class StudentBookAccommodationComponent implements OnInit {
         limitToLast: 50
       }
     });
-
-
-
     debugger;
     this.user = this.afAuth.authState;
+    this.refrencAF = af;
+
   }
 
   ngOnInit() {
@@ -62,10 +61,20 @@ export class StudentBookAccommodationComponent implements OnInit {
       'size' : '15qm',
       'Rent' : 220,
       'AvailableFrom' : (<HTMLInputElement>document.getElementById('from')).value,
-      'To' : (<HTMLInputElement>document.getElementById('to')).value
+      'To' : (<HTMLInputElement>document.getElementById('to')).value,
+      'Email':'nikitha09@gmail.com',
+      'Status':'inprocess'
     }
-    this.studentBookingList.push({'studentsBookingData': this.obj});
+    this.items.push({'studentsBookingData': this.obj});
     this.msgVal = '';
+    this.items = this.refrencAF.list('/studentsBookingData', {
+      query: {
+        limitToLast: 50,
+        orderByChild:'/studentsBookingData/Email',
+        equalTo: 'nikitha09@gmail.com',
+      }
+
+    });
   }
   buildObject(desc: object) {
     this.obj = ({ test: desc});

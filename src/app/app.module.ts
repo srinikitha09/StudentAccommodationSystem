@@ -13,6 +13,7 @@ import { StudentRegistrationComponent } from './student-registration/student-reg
 import { StudentBookAccommodationComponent } from './student-book-accommodation/student-book-accommodation.component';
 import { NewStudentCordinatorCreationComponent } from './new-student-cordinator-creation/new-student-cordinator-creation.component';
 import { StudentLoginComponent } from './student-login/student-login.component';
+import { AdminViewApplicationsComponent } from './admin-view-applications/admin-view-applications.component';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyDuTJsnGTP_bdcLDCBnBzbYE3r_Eej_JUY",
@@ -31,7 +32,8 @@ export const firebaseConfig = {
     StudentRegistrationComponent,
     StudentBookAccommodationComponent,
     NewStudentCordinatorCreationComponent,
-    StudentLoginComponent
+    StudentLoginComponent,
+    AdminViewApplicationsComponent
   ],
   imports: [
     BrowserModule,
@@ -56,7 +58,11 @@ export const firebaseConfig = {
       {
         path: 'studentLogin',
         component: StudentLoginComponent
-      }
+      },
+      {
+      path: 'viewApplications',
+  component: AdminViewApplicationsComponent
+}
 
     ])
   ],

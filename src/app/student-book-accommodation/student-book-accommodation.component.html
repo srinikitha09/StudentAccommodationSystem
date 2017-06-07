@@ -77,6 +77,32 @@
 
 
     </form>
+    <table >
+      <thead style="font-size: larger">
+      <tr>
+
+        <td>BuildingName</td>
+        <td>Rent</td>
+        <td>RoomType</td>
+        <td>AvailableFrom</td>
+        <td>To</td>
+        <td>Status</td>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let item of items | async">
+
+
+        <td>{{item.studentsBookingData.BuildingName}}</td>
+        <td>{{item.studentsBookingData.Rent}}</td>
+        <td>{{item.studentsBookingData.RoomType}}</td>
+        <td>{{item.studentsBookingData.AvailableFrom}}</td>
+        <td>{{item.studentsBookingData.To}}</td>
+        <td>{{item.studentsBookingData.Status}}</td>
+
+      </tr>
+      </tbody>
+    </table>
   </div>
 <div id="contract" class="contract">
   <p>Dear   xxxxx,</p>
