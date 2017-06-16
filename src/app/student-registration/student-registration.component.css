@@ -127,4 +127,10 @@ select{
   margin-left: 90px;
 }
 
+#close {
+  float:left;
+  display:inline-block;
+  padding:2px 5px;
+  background:#ccc;
+}
 
